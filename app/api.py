@@ -28,7 +28,7 @@ app = FastAPI(
 
 example_request = srsly.read_json("app/data/example_request.json")
 
-nlp = spacy.load("ro_core_news_lg")
+nlp = spacy.load("ro_core_news_sm")
 extractor = SpacyExtractor(nlp)
 
 @app.get("/", include_in_schema=False)
